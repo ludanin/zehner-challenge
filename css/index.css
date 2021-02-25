@@ -85,8 +85,8 @@ i.account::before {
 i.cart::before {
   background-image: url("/icons/cart.svg");
 }
-i.chevrown-right::before {
-  background-image: url("/icons/chevrown-right.svg");
+i.chevron-right::before {
+  background-image: url("/icons/chevron-right.svg");
 }
 i.facebook::before {
   background-image: url("/icons/facebook.svg");
@@ -296,4 +296,62 @@ nav .logo img {
 .features .mobile .column.last {
   width: 75vw;
   padding-right: 25vw;
+}
+
+/* §1 Products */
+.products {
+  margin-bottom: 75px;
+}
+.products div[class*="col"] {
+  position: relative;
+  background-color: var(--gray1);
+}
+.products .shop-this {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products .shop-this i {
+  transform: none;
+}
+.products .img-wrapper img {
+  width: 100%;
+  object-fit: contain;
+  display: flex;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+  .products div[class*="col"] {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 4px;
+  }
+  .products .shop-this {
+    flex: 3;
+    height: 100%;
+  }
+  .products .img-wrapper {
+    flex: 2;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products div[class*="col"] {
+    border: 2px solid #fff;
+    display: flex;
+    align-items: flex-end;
+  }
+  @media screen and (max-width: 991px) {
+    .products div[class*="col"] {
+      padding-top: 80px;
+    }
+  }
+  .products .shop-this {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 200px;
+    max-width: 40%;
+  }
 }
