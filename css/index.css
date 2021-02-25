@@ -1,4 +1,4 @@
-/* §1 Fonts */
+/* Fonts */
 
 :root {
   --sans: "Didact Gothic", sans-serif;
@@ -42,7 +42,7 @@ button.btn:hover {
   text-decoration: underline;
 }
 
-/* §1 Free Shipping */
+/* Free Shipping */
 
 .free-shipping {
   color: #fff;
@@ -58,7 +58,7 @@ button.btn:hover {
   z-index: 999;
 }
 
-/* §1 Icons */
+/* Icons */
 
 /*
 Since the page does not uses italic we're just overwriting its entire rules
@@ -122,7 +122,7 @@ i.youtube::before {
   background-image: url("/icons/youtube.svg");
 }
 
-/* §1 Nav */
+/* Nav */
 
 nav {
   display: flex;
@@ -137,7 +137,7 @@ nav > .container {
   justify-content: space-between;
 }
 
-/* §2 Regular Links */
+/* Regular Links */
 nav div.link-group > a {
   color: #000;
   text-decoration: none;
@@ -156,7 +156,7 @@ nav div.link-group > a:hover {
   text-decoration: underline;
 }
 
-/* §2 Logo */
+/* Logo */
 nav .logo {
   --width: 140px;
   --half: calc(var(--width) / 2);
@@ -170,7 +170,7 @@ nav .logo img {
   object-fit: contain;
 }
 
-/* §2 Mobile (both phones and tablets) fixes */
+/* Mobile (both phones and tablets) fixes */
 @media screen and (max-width: 991px) {
   nav {
     padding: 35px 0;
@@ -188,7 +188,7 @@ nav .logo img {
   }
 }
 
-/* §1 Splash */
+/* Splash */
 .splash {
   background-color: var(--gray2);
   text-align: center;
@@ -236,7 +236,7 @@ nav .logo img {
   }
 }
 
-/* §1 Features */
+/* Features */
 .features {
   text-align: center;
 }
@@ -298,7 +298,7 @@ nav .logo img {
   padding-right: 25vw;
 }
 
-/* §1 Products */
+/* Products */
 .products {
   margin-bottom: 75px;
 }
