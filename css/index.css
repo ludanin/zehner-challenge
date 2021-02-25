@@ -54,6 +54,8 @@ button.btn:hover {
   justify-content: center;
   align-items: center;
   position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 /* §1 Icons */
@@ -266,19 +268,21 @@ nav .logo img {
   position: relative;
 }
 .features .overlay {
-  position: fixed;
+  position: sticky;
   pointer-events: none;
   width: 100vw;
-  height: 100%;
+  margin-right: -100vw;
   left: 0;
+  flex-shrink: 0;
   background-image: linear-gradient(
     90deg,
-    #fff 0%,
-    #fff8 5%,
-    #fff0 50%,
-    #fff8 95%,
-    #fff 100%
+    #fff 0vw,
+    #fff8 15vw,
+    #fff0 50vw,
+    #fff8 85vw,
+    #fff 100vw
   );
+  z-index: 10;
 }
 .features .mobile .column {
   width: 50vw;
@@ -286,7 +290,7 @@ nav .logo img {
   box-sizing: border-box;
   flex-shrink: 0;
 }
-.features .mobile .column:first-child {
+.features .mobile .column.first {
   margin-left: 25vw;
 }
 .features .mobile .column.last {
