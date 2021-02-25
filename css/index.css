@@ -9,6 +9,8 @@ body {
   font-family: var(--sans);
   line-height: 1.5;
   letter-spacing: 0.05;
+  color: #000;
+  background-color: #fff;
 }
 
 h1,
@@ -31,4 +33,111 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+}
+
+/* §1 Icons */
+
+/*
+Since the page does not uses italic we're just overwriting its entire rules
+for icons, doing this hack to save time.
+*/
+i {
+  --size: 20px;
+  width: var(--size);
+  height: var(--size);
+  transform: translateY(20%);
+  display: inline-block;
+}
+i::before {
+  display: inline-block;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+i.account::before {
+  background-image: url("/icons/account.svg");
+}
+i.cart::before {
+  background-image: url("/icons/cart.svg");
+}
+i.chevrown-right::before {
+  background-image: url("/icons/chevrown-right.svg");
+}
+i.facebook::before {
+  background-image: url("/icons/facebook.svg");
+}
+i.instagram::before {
+  background-image: url("/icons/instagram.svg");
+}
+i.location::before {
+  background-image: url("/icons/location.svg");
+}
+i.minus::before {
+  background-image: url("/icons/minus.svg");
+}
+i.pinterest::before {
+  background-image: url("/icons/pinterest.svg");
+}
+i.plus::before {
+  background-image: url("/icons/plus.svg");
+}
+i.search::before {
+  background-image: url("/icons/search.svg");
+}
+i.star::before {
+  background-image: url("/icons/star.svg");
+}
+i.twitter::before {
+  background-image: url("/icons/twitter.svg");
+}
+i.youtube::before {
+  background-image: url("/icons/youtube.svg");
+}
+
+/* §1 Nav */
+
+nav {
+  display: flex;
+  padding: 35px;
+}
+
+nav > .container {
+  display: flex;
+  position: relative;
+  height: 35px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* §2 Regular Links */
+nav div.link-group > a {
+  color: #000;
+  text-decoration: none;
+  font-family: var(--bold);
+  cursor: pointer;
+}
+nav div.link-group > a + a {
+  margin-left: 25px;
+}
+@media screen and (min-width: 1400px) {
+  nav div.link-group > a + a {
+    margin-left: 50px;
+  }
+}
+nav div.link-group > a:hover {
+  text-decoration: underline;
+}
+
+/* §2 Logo */
+nav .logo {
+  position: absolute;
+  width: 140px;
+  margin-left: calc(50% - 85px);
+}
+nav .logo img {
+  width: 100%;
+  object-fit: contain;
 }
