@@ -7,4 +7,28 @@
 
 body {
   font-family: var(--sans);
+  line-height: 1.5;
+  letter-spacing: 0.05;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--bold);
+}
+
+/* §1 Free Shipping */
+
+.free-shipping {
+  color: #fff;
+  background-color: #000;
+  font-family: var(--bold);
+  font-size: 15px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
